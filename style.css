@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: absolute;
+  height: 100vh;
+  /* opacity: 0.04; */
+  background: #fff;
+}
+.well {
+  padding: 25% 0 0 30%;
+  width: 150%;
+}
+.form__container {
+  position: relative;
+  left: 600px;
+  top: -320px;
+  /* bottom: 270px; */
+  width: 105%;
+  /* height: 80vh; */
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin-top: 20px;
+  /* width: 35%; */
+}
+label {
+  color: var(--text-headings, #011c34);
+  font-family: Sofia Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+input {
+  width: 205px;
+  height: 40px;
+  flex-shrink: 0;
+  padding: 0 5px;
+  color: var(--cl-grey, #737373);
+  font-family: Sofia Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+select {
+  width: 205px;
+  height: 40px;
+}
+.dg {
+  grid-column: span 2;
+}
+.dg select {
+  width: 97.5%;
+}
+.password {
+  grid-column: span 2;
+}
+.password input {
+  border: 0.3px solid black;
+  width: 90%;
+  height: 5vh;
+}
+.password-text {
+  display: flex;
+  height: 5vh;
+  width: 97.5%;
+  /* padding: 0 5px; */
+  /* background-color: aqua; */
+  border: 0.3px solid black;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  background-color: #2ec4b6;
+  width: 97.5%;
+  padding: 10px 0;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin: 5% 0;
+}
+.terms {
+  color: #000;
+  font-family: Sofia Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 178.571% */
+}
+
+@media screen and (max-width: 500px) {
+  .well {
+    padding: 5% 0 0 10%;
+    width: 110%;
+    background-color: aqua;
+  }
+  .well img {
+    width: 38px;
+  }
+  .well h2 {
+    color: #000b0a;
+    font-family: Brown;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+  }
+  .well p {
+    color: #737373;
+    font-family: Brown;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 25px; /* 156.25% */
+  }
+  .form__container {
+    left: 20px;
+    top: 40px;
+    /* margin: 0 5%; */
+    width: 90%;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0 0px 10px;
+  }
+  input {
+    width: 295px;
+    height: 48px;
+    flex-shrink: 0;
+    padding: 0 5px;
+    color: var(--cl-grey, #737373);
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+  }
+  select {
+    width: 295px;
+    height: 48px;
+    margin: 1% 0;
+  }
+  .dg select {
+    width: 295px;
+    height: 48px;
+  }
+  .password input {
+    border: 0.3px solid black;
+    width: 255px;
+    height: 48px;
+  }
+  .password-text {
+    display: flex;
+    width: 295px;
+    height: 48px;
+    /* padding: 0 5px; */
+    /* background-color: aqua; */
+    border: 0.3px solid black;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
